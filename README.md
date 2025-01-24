@@ -16,39 +16,7 @@ npm install
 npm start
 
 
-Here's a basic example of how to use the 3D Animated Menu in your React project:
+Happy coding !!
 
-jsx
-Copy
-Edit
-import React from "react";
-import ThreeDMenu from "3d-animated-menu";
-
-const App = () => {
-  const menuItems = [
-    { label: "Home", link: "/" },
-    { label: "About", link: "/about" },
-    { label: "Services", link: "/services" },
-    { label: "Contact", link: "/contact" },
-  ];
-
-  return (
-    <div>
-      <h1>Welcome to My App</h1>
-      <ThreeDMenu
-        items={menuItems}
-        animationSpeed={0.5} // Adjust the animation speed
-        menuStyle={{
-          backgroundColor: "#333",
-          color: "#fff",
-          borderRadius: "10px",
-        }}
-        onSelect={(item) => console.log(`Selected: ${item.label}`)}
-      />
-    </div>
-  );
-};
-
-export default App;
 
 
