@@ -1,0 +1,109 @@
+
+ul {
+    position: absolute;
+    
+    /* Main transformation: we transform all the elements 
+    from he list */
+
+    transform: skewY(-7deg);
+}
+
+ul li {
+
+    background-color: hsl(251, 67%, 45%);
+    color: whitesmoke;
+
+    list-style: none;
+    padding: 1em;
+    
+    width: 8em;
+    
+    position: relative;
+
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: .5s;
+
+    cursor: pointer;
+
+    margin-block: .8em;
+
+}
+
+ul li:hover {
+
+    background-color: hsl(145, 51%, 50%);
+
+    transform: translateX(4em);
+
+}
+
+ul li::before {
+    background-color: hsl(251, 67%, 45%);
+    content: '';
+
+    position: absolute;
+    top: 0;
+    left: -1em;
+
+    width: 1em;
+    height: 100%;
+
+    transform-origin: right;
+    transform: skewY(30deg);
+
+    transition: .5s;
+
+}
+
+ul li:hover::before {
+    background-color: hsl(251, 67%, 45%);
+    
+}
+
+ul li::after {
+    background-color: hsl(251, 67%, 45%);
+    content: '';
+
+    position: absolute;
+    top: -.60em;
+    right: -.025em;
+
+    width: 100%;
+    height: .60em;
+
+    transform-origin: bottom;
+    transform: skewX(60deg);
+
+    transition: .5s;
+
+}
+
+ul li:hover::after {
+    background-color: hsl(145, 51%, 48%);
+    
+}
+
+ul li:last-child::after {
+
+    box-shadow: -8.5em 5em .5em hsl(0, 0%, 0%, .7);
+}
+
+.li_text {
+
+    color: whitesmoke;
+
+    cursor: pointer;
+
+}
+
+.li_text:hover {
+
+    color: hsl(0, 0%, 96%, .5);
+
+}
+
+
